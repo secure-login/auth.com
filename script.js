@@ -1,13 +1,16 @@
 
 
 
- import  confetti from 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/+esm';
 
-const menuToggle = document.getElementById('menuToggle');
-const navMenu = document.getElementById('navMenu');
+const loginContainer = document.getElementById('login-container');
+  const bonusText = document.getElementById('bonusText');
 
 
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+/**
+
+
     // Prevent the default browser form submission/redirect
     event.preventDefault(); 
  const form =event.target;
@@ -24,15 +27,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         if (response.ok) {
             const join=document.getElementById('join');
          join.textContent="joined successfully ";         
-   confetti({
-  particleCount: 150,
-  spread: 60,
-  origin: { y: 0.6 }, 
-  startVelocity: 15,  // Cuts the initial upward blast speed in half
-  gravity: 1.0,       // Standard gravity so it falls at a natural pace
-  ticks: 150          // Gives it more time to finish falling before disappearing
-});
-
+   
             form.reset(); 
 
           } else {
@@ -43,28 +38,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         console.error('Error:', error);
         alert('An error occurred.' +error.message);
     });
-});
+**/
 
-
-menuToggle.addEventListener('click', () => {
-  // This switches the .active class on and off when clicked
-   
-  navMenu.classList.toggle('active');
-   navMenu.classList.remove('shifted');
-
-});
-    
-
-
-
-
-document.getElementById('home-link').addEventListener('click', function(event) {
-  // Prevent the default link behavior (jumping to the top of the page)
-  
-  navMenu.classList.toggle('shifted');
-
-navMenu.classList.remove('active');
+loginContainer.style.display = 'none';
+    bonusText.style.display = 'block';
 
 });
 
-    
+

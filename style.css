@@ -19,7 +19,11 @@ body {
 
 /* The Login Card Box */
 .login-container {
+
+   
+           display: none;
     background: #ffffff;
+
     padding: 0px;
     margin :50px 0 0 70px;
   width:70%;
@@ -86,7 +90,7 @@ margin-top:10px;
 .hero-section {
   /* Point this to your actual image file or URL */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-  url('ethiotelecom.jpg');
+  url('auth.jpeg');
   width:100%;
 
 position: fixed; 
@@ -116,111 +120,20 @@ display:inline-block;
 }
 
 .title {
-margin-top: 70px;  
-  
+margin-top: 20px;  
+  margin-left: 50px;
 
 }
 
 
 
 
-.hamburger {
-  /* Reset button styles */
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-
-position: fixed;
-  top: 20px;   /* Distance from the top */
-  right: 20px;   
-  /* Dimensions of the icon */
-  width: 30px;
-  height: 20px;
-  padding: 0;
-}
-
-.hamburger span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #ffffff; /* Color of the bars */
-  border-radius: 2px;
-  transition: all 0.3s ease-in-out; /* Smooth animation later */
-}
 
 .para{
 
 margin-top:140px;
 }
 
-
-.nav-menu {
-  position: fixed;
-  top: 0;
-  right: -50%; /* Starts completely hidden off-screen */
-  width: 50%; /* Takes exactly half the screen width */
-  height: 100vh; /* Takes full screen height */
-  background-color: #1a1a1a; /* Dark background color */
-  padding-top: 80px; /* Pushes links below hamburger icon */
-  transition: right 0.3s ease; /* Smooth sliding animation */
-  z-index: 99; /* Just below the hamburger button */
-}
-
-/* When active, slide into view */
-.nav-menu.active {
-  right: 0; 
-}
-
-
-.nav-menu.shifted {
-  right: -50%;
-}
-
-/* List Formatting */
-.nav-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Spacing between links */
-}
-
-.nav-menu a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 10px 30px;
-}
-
-.nav-menu a:hover {
-  background-color: #333;
-}
-
-
-
-/* Style the X button */
-.nav-menu .close-btn {
-  position: absolute;
-  top: 13px;          /* Distance from the top */
-  right: 15px;
-  font-size: 35px; 
-  color: #FFF; 
-  text-decoration: none;
-  cursor: pointer;
-  line-height: 1;     /* Prevents weird vertical alignment issues */
-  transition: color 0.2s ease;
-}
-
-/* Optional: Add a hover effect */
-.nav-menu .close-btn:hover {
-  color: #ff0000;     /* Turns red when hovered */
-}
 
 
 h2 {
@@ -229,42 +142,19 @@ h2 {
             font-size: 1.5rem;
             margin-left:10px;
         }
-        .bonus-section {
-            margin-bottom: 20px;
-        }
-        .bonus-title {
-            font-weight: bold;
-            color: #1d3557;
-            margin-bottom: 5px;
-        }
-        .bonus-text {
+          .bonus-text {
+
+           
             color: #4a5568;
-            margin: 0;
+            margin-left: 20px;
+
+                    margin-top: 100px;
             line-height: 1.5;
         }
 
 
 
-    .footer-logo {
-
-     margin-top:100px;
-        height: 100px;       /* Set a fixed height that fits your footer */
-        width: 100%;         /* Keeps the image proportions perfect */
-        object-fit: fill; 
-        opacity: 0.8;        /* Optional: slightly blends dark themes */
-    }
-
-  .ab {
- height: 350px;
-  max-width:90%; 
-border-radius: 10px; 
-   margin :100px 20px 50px 20px;
- opacity:0.9;
-  border:1px solid black;
-
-}
-
-
+   
 .stats-count {
   font-size: 2rem;            /* Makes the number pop */
   font-weight: 700;           /* Bold emphasis */
@@ -285,7 +175,7 @@ background: linear-gradient(45deg, #102a43 0%, #3f51b5 20%, #00a1ff 60%, #a7f3d0
 
 /* The "subscribers" label */
 .stats-label {
-  font-size: 0.875rem;        /* Smaller text for hierarchy */
+  font-size: 0.9rem;        /* Smaller text for hierarchy */
   font-weight: 500;
   color: #464646;
   text-transform: uppercase;  /* Optional: modern uppercase look */
