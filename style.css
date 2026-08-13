@@ -89,7 +89,7 @@ margin-top:10px;
 
 .hero-section {
   /* Point this to your actual image file or URL */
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), 
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), 
   url('auth.jpeg');
   width:100%;
 
@@ -150,14 +150,16 @@ h2 {
             margin-left: 20px;
       
                          margin-left: 10px;
-                    margin-top: 120px;
+                    margin-top: 130px;
             line-height: 1.5;
         }
 
 
 .auth{
 margin-left: 50px;
- margin-top: 130px;
+ margin-top: 140px;
+
+  font-size: 1.5rem;
 }   
 .stats-count {
   font-size: 2rem;            /* Makes the number pop */
