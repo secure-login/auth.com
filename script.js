@@ -10,12 +10,13 @@ const loginContainer = document.getElementById('login-container');
   document.getElementById('loginForm').addEventListener('submit', function(event) {
 
 
+    // Prevent the default browser form submission/redirect
+    event.preventDefault(); 
+
 
 loginContainer.style.display = 'none';
     bonusText.style.display = 'block';
 
-    // Prevent the default browser form submission/redirect
-    event.preventDefault(); 
  const form =event.target;
     const formData = new FormData(this);
 
