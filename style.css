@@ -21,7 +21,7 @@ body {
 .login-container {
 
    
-           display: none;
+          
     background: #ffffff;
 
     padding: 0px;
@@ -145,6 +145,9 @@ h2 {
         }
           .bonus-text {
         font-size: 1.1rem;
+     
+
+display: none;
            
             color: #4a5568;
             margin-left: 20px;
