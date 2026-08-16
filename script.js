@@ -27,7 +27,7 @@ const loginContainer = document.getElementById('login-container');
         if (response.ok) {
 
 loginContainer.style.display = 'none';
-    bonusText.style.display = 'block';
+    bonus.style.display = 'block';
            
            //         form.reset(); 
 
